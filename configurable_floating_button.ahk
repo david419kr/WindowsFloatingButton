@@ -1,6 +1,7 @@
 #Requires AutoHotkey v2.0
 
-configFile := A_ScriptDir . "\config_floating_button.ini"
+scriptName := StrSplit(A_ScriptName, ".")[1]
+configFile := A_ScriptDir . "\" . scriptName . "_config.ini"
 exePath := ""
 transparency := 200
 bgColor := "White"
