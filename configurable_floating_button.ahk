@@ -1,5 +1,6 @@
 #Requires AutoHotkey v2.0
 
+global mainGuiHwnd := 0
 scriptName := StrSplit(A_ScriptName, ".")[1]
 configFile := A_ScriptDir . "\" . scriptName . "_config.ini"
 exePath := ""
@@ -24,6 +25,7 @@ button.OnEvent("Click", RunSelectedExe)
 settingsButton := mainGui.Add("Button", "x55 y10 w30 h30", "⚙️")
 settingsButton.OnEvent("Click", OpenSettings)
 settingsButton.SetFont("s" fontSize)
+mainGuiHwnd := mainGui.Hwnd
 
 ; Resize GUI
 mainGui.OnEvent("Size", GuiResize)
@@ -201,10 +203,11 @@ GuiResize(thisGui, minMax, width, height) {
 
 ; Redefine where the sizing borders are.  This is necessary since
 ; returning 0 for WM_NCCALCSIZE effectively gives borders zero size.
-WM_NCHITTEST(wParam, lParam, *){
+WM_NCHITTEST(wParam, lParam, msg, hwnd){
 	static border_size := 6
-	if !mainGui
-		return
+    if !mainGui || hwnd != mainGui.Hwnd
+        return
+	
 	WinGetPos &gX, &gY, &gW, &gH, mainGui
 	x := lParam<<48>>48, y := lParam<<32>>48
 	hit_left    := x <  gX+border_size
@@ -235,8 +238,10 @@ WM_NCHITTEST(wParam, lParam, *){
 	; else let default hit-testing be done
 }
 
-WM_NCCALCSIZE(*){
-	return 0
+WM_NCCALCSIZE(wParam, lParam, msg, hwnd) {
+    if hwnd == mainGuiHwnd
+        return 0
+    ; else let default processing be done
 }
 
 checkMousePos(){
