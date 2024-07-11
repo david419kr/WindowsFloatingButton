@@ -2,6 +2,8 @@
 A simple configurable floating button for windows, to run a exe file.  
 Made for self-usage, via Autohotkey V2.0.  
 
+You can download compiled executable at [release](https://github.com/david419kr/WindowsFloatingButton/releases/latest).  
+
 The usage is pretty self-explanatory.  
 1. Set any .exe file  
 2. Run
