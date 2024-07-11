@@ -176,9 +176,9 @@ GuiResize(thisGui, minMax, width, height) {
 
     buttonBlankW := width * 0.13
     buttonBlankH := height * 0.22
-    runButtonW := width * 0.55  ; 77% of window width
+    runButtonW := width * 0.55
     runButtonH := height * 0.6
-    settingsButtonW := width * 0.2  ; 23% of window width
+    settingsButtonW := width * 0.2
     settingsButtonH := height * 0.6
     fontSize := guiW / 10
 
