@@ -22,9 +22,8 @@ AutoHotKey v2를 이용하여 자가사용 용도로 만들었습니다.
 
 설정에서 실행할 .exe를 고르시고, 투명도를 조절하고, 가장자리 배경색을 변경 가능해요.  
 
-![image](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/60a8c822-e3e5-4d95-a88f-b240fcdb15af)  
+![image](https://github.com/user-attachments/assets/4713ad58-721a-40e6-b80d-9ccb618907ba)    
 
 실행시 config용 ini 파일이 자동 생성됩니다.  
 모든 설정과 창 위치, 크기 등이 이 ini에 기록돼요.  
-![image](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/08fc0a50-736e-44d3-9ae2-7fd5b90229e5)
-
+![image](https://github.com/user-attachments/assets/5d7ec005-9c73-4e67-9427-701711979887)  
