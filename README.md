@@ -1,4 +1,6 @@
 # WindowsFloatingButton
+**한국어 README**는 [여기](https://github.com/david419kr/WindowsFloatingButton/blob/main/README_kr.md) 있습니다.  
+<br>
 A simple configurable floating button for windows, to run a exe file.  
 Made for self-usage, via Autohotkey V2.0.  
 
