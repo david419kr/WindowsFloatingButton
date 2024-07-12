@@ -24,9 +24,10 @@ The left button is "run" button, and the right one is settings.
 
 At settings, you can select an exe to launch, adjust opacity, and change background color.  
 
-![image](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/60a8c822-e3e5-4d95-a88f-b240fcdb15af)  
+![image](https://github.com/user-attachments/assets/4713ad58-721a-40e6-b80d-9ccb618907ba)    
 
 Config file will be generated automatically.  
 All settings and window size, position will be stored there.  
-![image](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/08fc0a50-736e-44d3-9ae2-7fd5b90229e5)
+![image](https://github.com/user-attachments/assets/5d7ec005-9c73-4e67-9427-701711979887)
+
 
