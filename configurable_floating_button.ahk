@@ -29,9 +29,11 @@ mainGuiHwnd := mainGui.Hwnd
 
 ; Resize GUI
 mainGui.OnEvent("Size", GuiResize)
+mainGui.OnEvent("Size", (*) => SaveGuiPosition())
 
 ; Settings GUI
 settingsGui := Gui("+Owner" . mainGui.Hwnd)
+settingsGui.Opt("-SysMenu")
 settingsGui.Add("Text", "x10 y10", "Select an exe file:")
 exeEdit := settingsGui.Add("Edit", "x10 y30 w250 ReadOnly", exePath)
 browseButton := settingsGui.Add("Button", "x270 y28 w70", "Browse")
@@ -67,6 +69,7 @@ OnMessage(0x83, WM_NCCALCSIZE)
 SetTimer checkMousePos, 50
 
 ; Drag
+OnMessage(0x200, WM_MOUSEMOVE)
 OnMessage(0x201, WM_LBUTTONDOWN)
 return
 
@@ -79,8 +82,16 @@ ExitEvent(*) {
 WM_LBUTTONDOWN(wParam, lParam, msg, hwnd) {
     if (hwnd != mainGui.Hwnd)
         return
-
+ 
+    SaveGuiPosition()
     PostMessage(0xA1, 2, , , "A")
+}
+
+WM_MOUSEMOVE(wParam, lParam, msg, hwnd) {
+    if (hwnd != mainGui.Hwnd)
+        return
+ 
+    SaveGuiPosition()
 }
 
 RunSelectedExe(*) {
