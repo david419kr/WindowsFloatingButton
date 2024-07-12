@@ -12,9 +12,8 @@ The usage is pretty self-explanatory.
 3. (Optional) You can run multiple floating buttons by making copies as you want. Please refer to the example GIF.  
 
 First, here is a brief usage example gif.  
-![ezgif-7-9e8373fe55](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/604029ab-02a2-4b3f-a51e-9ce5e69bad11)  
+![1111](https://github.com/user-attachments/assets/503830c1-b78c-4c09-b5ba-aa891b2ad4da)  
 All settings and size, position are remembered.  
-![ezgif-7-6a8c80574f](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/8879790d-4f66-47a6-9bfd-7fa520779452)  
 
 This square is the floating button.  
 ![image](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/f256d58a-8dac-4cb8-bb69-4598fbcd7e40)  
