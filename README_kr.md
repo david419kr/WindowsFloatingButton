@@ -10,9 +10,8 @@ AutoHotKey v2를 이용하여 자가사용 용도로 만들었습니다.
 3. (선택사항) 실행파일을 복사해서 여러번 실행하시면 플로팅버튼 여러개 띄울 수 있습니다. 아래 예시 GIF를 참고해주세요.  
 
 사용 예시 gif입니다.  
-![ezgif-7-9e8373fe55](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/604029ab-02a2-4b3f-a51e-9ce5e69bad11)  
-모든 설정과 버튼 위치, 크기는 유지돼요.  
-![ezgif-7-6a8c80574f](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/8879790d-4f66-47a6-9bfd-7fa520779452)  
+![1111](https://github.com/user-attachments/assets/503830c1-b78c-4c09-b5ba-aa891b2ad4da)    
+모든 설정과 버튼 위치, 크기는 저장되어 껐다 켜도 유지됩니다.  
 
 이 네모가 플로팅 버튼입니다.  
 ![image](https://github.com/david419kr/WindowsFloatingButton/assets/70783505/f256d58a-8dac-4cb8-bb69-4598fbcd7e40)  
